@@ -23,12 +23,14 @@ namespace Umbrella_Glider
         private MelonPreferences_Category gliderPreferencesCategory;
         private MelonPreferences_Entry<float> glidingForceEntry;
         private MelonPreferences_Entry<KeyCode> glidingKeyEntry;
+        private MelonPreferences_Entry<string> customModSettingsDescription;
 
         public override void OnInitializeMelon()
         {
             gliderPreferencesCategory = MelonPreferences.CreateCategory("Umbrella Glider");
             glidingForceEntry = gliderPreferencesCategory.CreateEntry<float>("GlidingForce", 10, "Gliding Force");
             glidingKeyEntry = gliderPreferencesCategory.CreateEntry<KeyCode>("GlidingKey", KeyCode.G, "Gliding Key");
+            customModSettingsDescription = gliderPreferencesCategory.CreateEntry<string>("CustomModSettingsDescription", "Too tired of walking?\nIntroducing \"Just A regular umbrella 3000\"\nthat allows you to float!");
         }
 
         public override void OnSceneWasInitialized(int buildIndex, string sceneName)

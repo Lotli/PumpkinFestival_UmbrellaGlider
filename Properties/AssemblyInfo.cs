@@ -5,6 +5,7 @@ using MelonLoader;
 using Umbrella_Glider; // The namespace of your mod class
 // ...
 [assembly: MelonInfo(typeof(UmbrellaGliderClass), "Umbrella Glider", "1.1.0", "Lotli")]
+[assembly: MelonOptionalDependencies("Pumpkin Mod Settings")]
 [assembly: MelonGame("adamgryu", "Pumpkins")]
 
 // General Information about an assembly is controlled through the following
